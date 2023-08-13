@@ -132,12 +132,7 @@ h3 {
     }
 
     .info {
-        /* grid-area: info; */
         order: 1;
-    }
-
-    .image {
-        /* grid-area: image; */
     }
 }
 
