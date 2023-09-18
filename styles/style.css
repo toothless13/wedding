@@ -8,6 +8,7 @@
     --color2: hsl(74, 7%, 75%);
     --color3: hsl(74, 7%, 45%);
     --color4: hsl(315, 98%, 52%);
+    --color5: hsl(0, 0%, 100%);
 }
 
 /* Reset CSS */
@@ -56,9 +57,14 @@ h3 {
 .info,
 .image {
     text-align: center;
-    background-color: var(--color2);
+    background-color: var(--color5);
     color: var(--color3);
     padding-bottom: 1rem;
+}
+
+.image {
+    padding-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .info h3 {
@@ -76,7 +82,48 @@ a {
     color: var(--color1);
 }
 
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
 
+.nav-link {
+    color: black;
+    text-decoration: none;
+    background-color: var(--color5);
+    padding: 1rem;
+    border-radius: 10px;
+    display: block;
+    font-family: 'Parisienne', cursive;
+    font-weight: 200;
+}
+
+#save-the-date {
+    color: var(--color5)
+}
+
+#save-the-date h3 {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.std-image-div {
+    /* display: block; */
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+img.std-image {
+    width: 75%;
+    display: block;
+    border-radius: 10px;
+}
 
 
 /* Media Queries */
