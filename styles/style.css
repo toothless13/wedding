@@ -125,6 +125,85 @@ img.std-image {
     border-radius: 10px;
 }
 
+/* #day-main-info {
+    background-color: var(--color5);
+} */
+
+#day-main-info h3 {
+    color: var(--color5);
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+#day-main-info div {
+    background-color: var(--color5);
+    width: 100%;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#venue-about {
+    background-color: var(--color5);
+}
+
+#venue-about h3 {
+    color: var(--color3);
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.venue-about__image {
+    width: 100%;
+}
+
+.venue-about__image--wisteria {
+    width: 15%;
+    position: absolute;
+}
+
+.venue-about__image--wisteria-right {
+    width: 15%;
+    position: absolute;
+    right: 0%;
+}
+
+.venue-about__info {
+    width: 100%;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.venue-about__other-hotels {
+    width: 100%;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.venue-about__hotels-list {
+    list-style-type: none;
+}
+
+.venue-about__taxi-companies {
+    width: 100%;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.venue-about__taxi-companies--abingdon {
+    list-style-type: none;
+}
+
+.venue-about__taxi-companies--didcot {
+    list-style-type: none;
+}
 
 /* Media Queries */
 
