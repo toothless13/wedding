@@ -372,6 +372,9 @@ h4 {
         height: 100%;
     }
 
+    .one-drive-link {
+        font-size: 1rem;
+    }
     /* .venue-about__info p {
         width: 75%;
         margin: 2rem auto;
