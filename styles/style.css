@@ -87,6 +87,7 @@ nav {
     width: 100%;
     justify-content: space-evenly;
     padding: 1rem 0;
+    background-color: var(--color1);
 }
 
 .nav-link {
@@ -112,6 +113,7 @@ nav {
     width: 60%;
     text-align: center;
     margin: 0 auto;
+    padding-top: 1rem;
 }
 
 .std-image-div {
@@ -306,6 +308,19 @@ h4 {
 
 /* Media Queries */
 
+@media screen and (min-width: 321px) {
+    .venue-about__info p {
+        width: 90%;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .venue-about__info p {
+        width: 80%;
+    }
+}
+
 /* 768px width */
 @media screen and (min-width:768px) {
     main {
@@ -328,13 +343,13 @@ h4 {
     .info h1 {
         font-size: 3rem;
         font-weight: 100;
-        order: 1;
+        /* order: 1; */
     }
 
     .info h2 {
         font-size: 2rem;
         font-weight: 200;
-        order: 1;
+        /* order: 1; */
     }
 
     .info h3 {
@@ -356,6 +371,11 @@ h4 {
         width: 100%;
         height: 100%;
     }
+
+    /* .venue-about__info p {
+        width: 75%;
+        margin: 2rem auto;
+    } */
 }
 
 /* 1024 px width */
