@@ -105,6 +105,10 @@ nav {
     display: none;
 }
 
+.separator-desktop {
+    display: none;
+}
+
 #save-the-date {
     color: var(--color5)
 }
@@ -131,9 +135,9 @@ img.std-image {
     border-radius: 10px;
 }
 
-/* #day-main-info {
-    background-color: var(--color5);
-} */
+.about-day__images {
+    display: none;
+}
 
 #day-main-info h3 {
     color: var(--color5);
@@ -175,6 +179,11 @@ h4 {
 
 .venue-about__image {
     width: 100%;
+}
+
+.venue-about__image--1,
+.venue-about__image--2 {
+    display: none;
 }
 
 .venue-about__image--wisteria {
@@ -239,6 +248,12 @@ h4 {
     width: 100%;
     height: 10px;
     background-color: var(--color5);
+}
+
+.separator-off-white {
+    width: 100%;
+    height: 20px;
+    background-color: var(--color2);
 }
 
 #more-info p {
@@ -375,41 +390,42 @@ h4 {
     .one-drive-link {
         font-size: 1rem;
     }
-    /* .venue-about__info p {
-        width: 75%;
-        margin: 2rem auto;
-    } */
 }
 
 /* 1024 px width */
 
 @media screen and (min-width: 1024px) {
+    * {
+        font-size: 20px;
+    }
+
     main {
-        /* grid-template-columns: 40% 60%; */
         display: flex;
         flex-direction: column;
-        
     }
 
     .info {
-        /* order: 1; */
-        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .intro-heading {
+        margin: 0 auto;
+        width: 40%;
     }
 
     .info h1 {
         font-size: 3rem;
         font-weight: 100;
-        /* order: 1; */
     }
 
     .info h2 {
         font-size: 2rem;
         font-weight: 200;
-        /* order: 1; */
     }
 
     .image {
-        position: relative;
+        width: 40%;
     }
 
     .mobile-nav {
@@ -419,26 +435,82 @@ h4 {
     .desktop-nav {
         display: flex;
     }
-/* 
-    nav {
-        order: ;
+
+    .separator-desktop {
+        display: block;
     }
 
-    .image {
-        order: 1;
-    } */
+    .std-image-div {
+        /* display: block; */
+        margin: 0 auto;
+        width: 100%;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    img.std-image {
+        width: 50%;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .about-day__images {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #day-main-info > div.about-day__images {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about-day__images img {
+        width: 33%;
+    }
+
+    .venue-about__images {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .venue-about__images img {
+        width: 33%;
+    }
+
+    .venue-about__image--1,
+    .venue-about__image--2 {
+        display: block;
+    }
+
+    .venue-about__info p {
+        width: 75%;
+    }
 }
 
 /* 1440px width */
 
 @media screen and (min-width: 1440px) {
+    * {
+        font-size: 24px;
+    }
+
+    .image {
+        width: 30%;
+        margin-left: 10%;
+    }
+
     .info h1 {
-        font-size: 4.5rem;
+        /* font-size: 4.5rem; */
         font-weight: 100;
     }
 
     .info h2 {
-        font-size: 3rem;
+        /* font-size: 3rem; */
         font-weight: 200;
     }
 
@@ -450,6 +522,32 @@ h4 {
 
     a {
         font-size: 1.5rem;
+    }
+
+    .venue-about__image--wisteria {
+        width: 15%;
+        position: absolute;
+    }
+    
+    .venue-about__image--wisteria-right {
+        width: 15%;
+        position: absolute;
+        right: 0%;
+    }
+
+    .venue-about__info p{
+        width: 50%;
+    }
+
+    .venue-about__other-hotels p,
+    .venue-about__taxi-companies p {
+        width: 50%;
+        margin: 1rem auto;
+    }
+
+    #more-info p {
+        width: 50%;
+        line-height: 150%;
     }
 }
 
