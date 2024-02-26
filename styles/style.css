@@ -24,6 +24,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+li {
+    list-style-type: none;
+}
+
 .info {
     text-align: center;
     background-color: var(--color2);
