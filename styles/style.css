@@ -160,6 +160,10 @@ img.std-image {
     margin: 0 auto;
 }
 
+#day-main-info a {
+    font-size: 1rem;
+}
+
 #venue-about {
     background-color: var(--color5);
 }
@@ -377,6 +381,16 @@ p.food-extras {
     padding: 0.5rem 1rem;
     text-align: center;
     margin: 0 auto;
+    height: 10rem;
+}
+
+.contact-us-form p {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-us-form a {
+    font-size: 1rem;
 }
 
 .form-input {
@@ -402,16 +416,69 @@ p.food-extras {
 
 /* Media Queries */
 
+@media screen and (min-width: 250px) {
+    .menu-container {
+        width: 50%;
+    }
+
+    .contact-us-form {
+        height: 8rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    .contact-us-form p {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .faq-container {
+        width: 90%;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+}
+
 @media screen and (min-width: 321px) {
     .venue-about__info p {
         width: 90%;
         margin: 2rem auto;
+    }
+
+    .menu-container {
+        width: 50%;
+    }
+
+    .contact-us-form {
+        height: 6rem;
+        width: 60%;
+        text-align: center;
+    }
+
+    .faq-container {
+        width: 60%;
     }
 }
 
 @media screen and (min-width: 450px) {
     .venue-about__info p {
         width: 80%;
+    }
+
+    .menu-container {
+        width: 50%;
+    }
+
+    .contact-us-form {
+        height: 8rem;
+        width: 60%;
+        text-align: center;
+    }
+
+    .faq-container {
+        width: 60%;
     }
 }
 
@@ -473,6 +540,18 @@ p.food-extras {
     .contact-us-form {
         /* color: var(--color5); */
         width: 80%;
+    }
+
+    .menu-container {
+        width: 30%;
+    }
+
+    .contact-us-form {
+        height: 14rem;
+    }
+
+    .faq-container {
+        width: 60%;
     }
 }
 
@@ -573,6 +652,18 @@ p.food-extras {
 
     .venue-about__info p {
         width: 75%;
+    }
+
+    .menu-container {
+        width: 30%;
+    }
+
+    .contact-us-form {
+        height: 14rem;
+    }
+
+    .faq-container {
+        width: 60%;
     }
 }
 
