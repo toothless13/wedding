@@ -4,10 +4,11 @@
 
 /* Set main colours */
 :root {
-    --color1: hsl(310, 8%, 55%);
+    --color1: hsl(271, 25%, 60%);
     --color2: hsl(74, 7%, 75%);
     --color3: hsl(74, 7%, 45%);
     --color4: hsl(315, 98%, 52%);
+    --color5: hsl(0, 0%, 100%);
 }
 
 /* Reset CSS */
@@ -21,6 +22,11 @@ body {
     background-color: var(--color1);
     width: 100%;
     font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style-type: none;
+    margin: 0.50rem 0;
 }
 
 .info {
@@ -56,9 +62,14 @@ h3 {
 .info,
 .image {
     text-align: center;
-    background-color: var(--color2);
+    background-color: var(--color5);
     color: var(--color3);
     padding-bottom: 1rem;
+}
+
+.image {
+    padding-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .info h3 {
@@ -76,18 +87,407 @@ a {
     color: var(--color1);
 }
 
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    background-color: var(--color1);
+}
 
+.nav-link {
+    color: black;
+    text-decoration: none;
+    background-color: var(--color5);
+    padding: 1rem;
+    border-radius: 10px;
+    display: block;
+    font-family: 'Parisienne', cursive;
+    font-weight: 200;
+}
 
+.desktop-nav {
+    display: none;
+}
+
+.separator-desktop {
+    display: none;
+}
+
+#save-the-date {
+    color: var(--color5)
+}
+
+#save-the-date h3 {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.std-image-div {
+    /* display: block; */
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+img.std-image {
+    width: 75%;
+    display: block;
+    border-radius: 10px;
+}
+
+.about-day__images {
+    display: none;
+}
+
+#day-main-info h3 {
+    color: var(--color5);
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+#day-main-info div {
+    background-color: var(--color5);
+    width: 100%;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#day-main-info a {
+    font-size: 1rem;
+}
+
+#venue-about {
+    background-color: var(--color5);
+}
+
+#venue-about h3 {
+    color: var(--color3);
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+h4 {
+    background-color: var(--color1);
+    color: var(--color5);
+    padding: .75rem;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.venue-about__image {
+    width: 100%;
+}
+
+.venue-about__image--1,
+.venue-about__image--2 {
+    display: none;
+}
+
+.venue-about__image--wisteria {
+    width: 15%;
+    position: absolute;
+}
+
+.venue-about__image--wisteria-right {
+    width: 15%;
+    position: absolute;
+    right: 0%;
+}
+
+.venue-about__info {
+    width: 100%;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+}
+
+.venue-about__other-hotels {
+    width: 100%;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+.venue-about__hotels-list {
+    list-style-type: none;
+}
+
+.venue-about__taxi-companies {
+    width: 100%;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.venue-about__taxi-companies--abingdon {
+    list-style-type: none;
+}
+
+.venue-about__taxi-companies--didcot {
+    list-style-type: none;
+}
+
+#menu {
+    background-color: var(--color5);
+
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#menu h3 {
+    color: var(--color3);
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin: 0 auto;
+    border: 2px solid var(--color3);
+    border-radius: 5px;
+    padding-bottom: 0.75rem;
+}
+
+.menu-container h4 {
+    margin: 0;
+    width: 50%;
+    background-color: var(--color5);
+    color: black;
+    font-size: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+
+.menu-container p {
+    width: 60%;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+
+}
+
+p.food-extras {
+    width: 60%;
+    font-style: italic;
+    font-size: 0.6rem;
+}
+
+#more-info h3 {
+    color: var(--color5);
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.separator-white {
+    width: 100%;
+    height: 20px;
+    background-color: var(--color5);
+}
+
+.separator-white-thin {
+    width: 100%;
+    height: 10px;
+    background-color: var(--color5);
+}
+
+.separator-off-white {
+    width: 100%;
+    height: 20px;
+    background-color: var(--color2);
+}
+
+#more-info {
+    padding-bottom: 1.5rem;
+}
+
+#more-info p {
+    color: var(--color5);
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#more-info a {
+    color: var(--color2);
+}
+
+#faqs h3 {
+    color: var(--color5);
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.faq-container {
+    color: var(--color5);
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    margin: 0 auto;
+    /* border-bottom: 3px solid var(--color5); */
+}
+
+.faq-q {
+    font-size: 1.25rem;
+}
+
+.faq-a {
+    font-size: 0.75rem;
+    border-bottom: 1px solid var(--color5);
+}
+
+.last-faq-a {
+    border-bottom: none;
+}
+
+#contact-us {
+    background-color: var(--color5);
+}
+
+#contact-us h3 {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.contact-us-form {
+    /* color: var(--color5); */
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    margin: 0 auto;
+    height: 10rem;
+}
+
+.contact-us-form p {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-us-form a {
+    font-size: 1rem;
+}
+
+.form-input {
+    width: 60%;
+}
+
+.contact-us-form textarea {
+    width: 60%;
+    height: 40%;
+}
+
+.form-submit-btn {
+    width: 30%;
+    border-radius: 10px;
+    background-color: var(--color1);
+    color: var(--color5);
+    padding: .5rem;
+}
+
+.form-submit-btn:hover {
+    cursor: pointer;
+}
 
 /* Media Queries */
+
+@media screen and (min-width: 250px) {
+    .menu-container {
+        width: 50%;
+    }
+
+    .contact-us-form {
+        height: 8rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    .contact-us-form p {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .faq-container {
+        width: 90%;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 321px) {
+    .venue-about__info p {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .menu-container {
+        width: 50%;
+    }
+
+    .contact-us-form {
+        height: 6rem;
+        width: 60%;
+        text-align: center;
+    }
+
+    .faq-container {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .venue-about__info p {
+        width: 80%;
+    }
+
+    .menu-container {
+        width: 50%;
+    }
+
+    .contact-us-form {
+        height: 8rem;
+        width: 60%;
+        text-align: center;
+    }
+
+    .faq-container {
+        width: 60%;
+    }
+}
 
 /* 768px width */
 @media screen and (min-width:768px) {
     main {
         display: grid;
-        grid-template-columns: 50% 50%;
         margin: 0;
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
 
     .info {
@@ -98,17 +498,19 @@ a {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        order: 1;
+        /* order: 1; */
     }
     
     .info h1 {
         font-size: 3rem;
         font-weight: 100;
+        /* order: 1; */
     }
 
     .info h2 {
         font-size: 2rem;
         font-weight: 200;
+        /* order: 1; */
     }
 
     .info h3 {
@@ -130,31 +532,160 @@ a {
         width: 100%;
         height: 100%;
     }
+
+    .one-drive-link {
+        font-size: 1rem;
+    }
+
+    .contact-us-form {
+        /* color: var(--color5); */
+        width: 80%;
+    }
+
+    .menu-container {
+        width: 30%;
+    }
+
+    .contact-us-form {
+        height: 14rem;
+    }
+
+    .faq-container {
+        width: 60%;
+    }
 }
 
 /* 1024 px width */
 
 @media screen and (min-width: 1024px) {
+    * {
+        font-size: 20px;
+    }
+
     main {
-        grid-template-columns: 40% 60%;
-        
+        display: flex;
+        flex-direction: column;
     }
 
     .info {
-        order: 1;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .intro-heading {
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    .info h1 {
+        font-size: 3rem;
+        font-weight: 100;
+    }
+
+    .info h2 {
+        font-size: 2rem;
+        font-weight: 200;
+    }
+
+    .image {
+        width: 40%;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+    }
+
+    .separator-desktop {
+        display: block;
+    }
+
+    .std-image-div {
+        /* display: block; */
+        margin: 0 auto;
+        width: 100%;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    img.std-image {
+        width: 50%;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .about-day__images {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #day-main-info > div.about-day__images {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about-day__images img {
+        width: 33%;
+    }
+
+    .venue-about__images {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .venue-about__images img {
+        width: 33%;
+    }
+
+    .venue-about__image--1,
+    .venue-about__image--2 {
+        display: block;
+    }
+
+    .venue-about__info p {
+        width: 75%;
+    }
+
+    .menu-container {
+        width: 30%;
+    }
+
+    .contact-us-form {
+        height: 14rem;
+    }
+
+    .faq-container {
+        width: 60%;
     }
 }
 
 /* 1440px width */
 
 @media screen and (min-width: 1440px) {
+    * {
+        font-size: 24px;
+    }
+
+    .image {
+        width: 30%;
+        margin-left: 10%;
+    }
+
     .info h1 {
-        font-size: 4.5rem;
+        /* font-size: 4.5rem; */
         font-weight: 100;
     }
 
     .info h2 {
-        font-size: 3rem;
+        /* font-size: 3rem; */
         font-weight: 200;
     }
 
@@ -166,6 +697,38 @@ a {
 
     a {
         font-size: 1.5rem;
+    }
+
+    img.std-image {
+        width: 40%;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .venue-about__image--wisteria {
+        width: 216px;
+        position: absolute;
+    }
+    
+    .venue-about__image--wisteria-right {
+        width: 216px;
+        position: absolute;
+        right: 0%;
+    }
+
+    .venue-about__info p{
+        width: 50%;
+    }
+
+    .venue-about__other-hotels p,
+    .venue-about__taxi-companies p {
+        width: 50%;
+        margin: 1rem auto;
+    }
+
+    #more-info p {
+        width: 50%;
+        line-height: 150%;
     }
 }
 
@@ -192,5 +755,16 @@ a {
         font-size: 1.5vw;
         font-weight: 400;
         color: var(--color1);
+    }
+
+    img.std-image {
+        width: 35%;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .contact-us-form {
+        /* color: var(--color5); */
+        width: 60%;
     }
 }
